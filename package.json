@@ -1,0 +1,13 @@
+{
+    "name": "anti-grass-notifications",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "dependencies": {
+      "electron": "^26.2.0",
+      "node-notifier": "^11.0.0"
+    }
+  }
+  

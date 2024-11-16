@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anti-Grass Notification Scheduler</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #74b9ff, #00cec9);
+      color: #fff;
+      padding: 20px;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    div {
+      margin-bottom: 15px;
+    }
+    label {
+      font-size: 1.2em;
+    }
+    select, button {
+      margin: 10px;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+    select {
+      background-color: #0984e3;
+      color: #fff;
+      cursor: pointer;
+    }
+    button {
+      background-color: #00cec9;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #01a3a4;
+    }
+    select:focus, button:focus {
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Anti-Grass Notification Scheduler</h1>
+  <div>
+    <label for="preset-dropdown">Select Notification Preset:</label>
+    <select id="preset-dropdown">
+      <option value="" disabled selected>-- Choose Slogan --</option>
+      <option value="reminder1">Reminder #1</option>
+      <option value="reminder2">Reminder #2</option>
+      <option value="reminder3">Reminder #3</option>
+    </select>
+  </div>
+  <div>
+    <label for="frequency-dropdown">Select Frequency (minutes):</label>
+    <select id="frequency-dropdown">
+      <option value="" disabled selected>-- Choose Frequency --</option>
+      <option value="1">1 Minute</option>
+      <option value="5">5 Minutes</option>
+      <option value="10">10 Minutes</option>
+      <option value="30">30 Minutes</option>
+      <option value="60">1 Hour</option>
+      <option value="180">3 Hours</option>
+      <option value="720">12 Hours</option>
+      <option value="1440">24 Hours</option>
+    </select>
+  </div>
+  <button id="start-button">Start Notifications</button>
+  <script src="renderer.js"></script>
+</body>
+</html>
